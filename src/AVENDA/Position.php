@@ -7,8 +7,9 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\utils\Config;
+use pocketmine\math\Vector3;
 
-class Positon extends PluginBase implements Listener {
+class Position extends PluginBase implements Listener {
 	public $config, $cDB;
 	public function onEnable() {
 		$this->config = new Config ( $this->getDataFolder () . "config.yml", Config::YAML );
